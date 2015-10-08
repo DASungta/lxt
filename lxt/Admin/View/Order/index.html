@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>订单列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="__PUBLIC__/Admin/css/style.css" rel='stylesheet' type='text/css' />
+<link href="__PUBLIC__/Admin/css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<script src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+     <include file='Public/head' />
+        <div id="page-wrapper">
+        <div class="col-md-12 graphs">
+	   <div class="xs">
+  	 <h3><span class="label label-success">订单列表</span>&nbsp;<a href="{:U('Admin/Order/addOrder')}"><button type="button" class="btn btn-xs btn-success warning_4">&nbsp;+&nbsp; </button></a></h3></div>
+     {$mid}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>订单编号</th>
+          <th>会员名称</th>
+          <th>创建时间</th>
+          <th>订单金额</th>
+          <th>订单内容</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <foreach name='order' item='v'>
+          <tr class="active">
+            <th scope="row">{$v.id}</th>
+            <td><span class="label label-warning" style='font-size:13px'>{$v.oid}</span></td>
+            <td>{$v.membername}</td>
+            <td>{$v.createtime}</td>
+            <td>{$v.money}</td>
+            <td>{$v.detail}</td>
+            <td><button type="button" class="btn btn-xs btn-info"><a style="color:white;font-size:15px" href="{:U('Admin/Order/viewDetail',array('oid'=>$v['oid']))}">查看详情</a></button></td>
+          </tr>
+        </foreach>
+        <tr class="success">
+          <td colspan="10" class="page" align="center">{$page}</td>
+        </tr>
+      </tbody>
+    </table>
+   </div>
+   
+
+  <include file='Public/footer' />
+<link href="__PUBLIC__/Admin/css/custom.css" rel="stylesheet">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="__PUBLIC__/Admin/js/metisMenu.min.js"></script>
+<script src="__PUBLIC__/Admin/js/custom.js"></script>
+</body>
+</html>

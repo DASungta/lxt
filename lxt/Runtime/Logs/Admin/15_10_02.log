@@ -1,0 +1,176 @@
+[ 2015-10-02T22:41:49+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2015-10-02T22:42:19+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Login/handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `sb_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sb_user` WHERE `uid` = 'suntton-admin' LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2015-10-02T22:42:19+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sb_order` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sb_member` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sb_order` ORDER BY createtime desc LIMIT 7   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2015-10-02T22:42:22+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sb_member` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sb_member` ORDER BY id LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sb_order`  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sb_memberstatus`  [ RunTime:0.0024s ]
+NOTIC: [8] Undefined variable: money /data/home/hyu1860350001/htdocs/lxt/lxt/Admin/Controller/MemberController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2015-10-02T22:42:26+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Member/scoreDetail/mid/1443516901.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1443516901  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1443516901 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sb_cash` WHERE `mid` = 1443516901  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sb_exchange` WHERE `mid` = 1443516901  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: page /data/home/hyu1860350001/htdocs/lxt/lxt/Runtime/Cache/Admin/95b594f5e03adba008ef4430a1dce30e.php 第 240 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2015-10-02T22:42:34+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sb_order` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sb_order` ORDER BY oid desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: mid /data/home/hyu1860350001/htdocs/lxt/lxt/Runtime/Cache/Admin/8b5045415bf71a2ef7c9513ace73f3fc.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2015-10-02T22:42:48+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Login/out.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+
+[ 2015-10-02T22:42:48+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+
+[ 2015-10-02T22:42:48+08:00 ] 117.136.45.220 /lxt/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
