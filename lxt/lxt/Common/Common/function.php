@@ -154,7 +154,7 @@ function getDay($Date_1,$Date_2) {
     }
 
     function get_member_info($mid) {    
-        $get_score=D('Home/order')->get_order_all_money($mid,1);//获取已返还的积分
+        $get_score=D('Home/Order')->get_order_all_money($mid,1);//获取已返还的积分
         $all_score=cal(get_info('order_all_money',$mid));//获取所有的积分
         $left_score=( $all_score-$get_score > 0 ) ? ($all_score-$get_score) : 0;//获取剩余未还反的积分
         $cash=get_info('cash_all_score',$mid);//获取提现

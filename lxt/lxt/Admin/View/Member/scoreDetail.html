@@ -43,13 +43,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </thead>
         <tbody>
  		  <tr>
- 		  	<th>{:$member['mid']}</th>
- 		  	<th>{:$member['name']}</th>
- 		  	<th>{:$member['score']}</th>
- 		  	<th>{:$left_money}</th>
- 		  	<th>{:$get_money}</th>
- 		  	<th>{:$cash}</th>
- 		  	<th>{:$ex_score}</th>
+ 		  	<th>{:session('mid')}</th>
+ 		  	<th>{:session('membername')}</th>
+ 		  	<th>{$data.all_score}</th>
+ 		  	<th>{$data.left_score}</th>
+ 		  	<th>{$data.get_score}</th>
+ 		  	<th>{$data.cash}</th>
+ 		  	<th>{$data.ex_score}</th>
  		  </tr>
           <tr class="success">
           <td colspan="10" class="page" align="center">{$page}</td>

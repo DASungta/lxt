@@ -202,8 +202,10 @@ class MemberController extends CommonController{
 
 	public function scoreDetail() {
 		$mid=I('get.mid');
+		$data=get_member_info($mid);
+		//p($data);die;
 		//p($mid);die;
-		$order=M('order')->where(array('mid'=>$mid))->select();
+		/*$order=M('order')->where(array('mid'=>$mid))->select();
     	$member=M('member')->where(array('mid'=>$mid))->find();
     	$memberstatus=M('memberstatus')->where(array('id'=>$member['memberstatus']))->find();
     	$repayrule=M('repayrule')->where(array('id'=>$memberstatus['repayrule']))->find();
@@ -240,7 +242,8 @@ class MemberController extends CommonController{
     	$this->left_money=$left_money;
     	$this->get_money=$get_money-$cash-$ex_score;
         $this->ex_score=$ex_score;
-        $this->cash=$cash;
+        $this->cash=$cash;*/
+        $this->data=$data;
         $this->display();
 	}
 

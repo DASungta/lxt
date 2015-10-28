@@ -144,7 +144,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								<div class="form-group">
 									<label for="disabledinput" class="col-sm-2 control-label">积分总额</label>
-									<h3><span class="label label-default" style='margin:15px;height:auto'><a class='pi' href="{:U('Admin/Order/index',array('mid'=>$v['mid']))}" style="font-size:15px;color:white" target="_blank">{$v.score}</a></span></h3>
+									<h3><span class="label label-default" style='margin:15px;height:auto'><a class='pi' href="{:U('Admin/Order/index',array('mid'=>$v['mid']))}" style="font-size:15px;color:white" target="_blank">{:cal(get_info('order_all_money'))}</a></span></h3>
 								</div>
 
 								<div class="panel-footer">

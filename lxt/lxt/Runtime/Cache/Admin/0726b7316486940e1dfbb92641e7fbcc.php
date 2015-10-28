@@ -326,7 +326,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								<div class="form-group">
 									<label for="disabledinput" class="col-sm-2 control-label">积分总额</label>
-									<h3><span class="label label-default" style='margin:15px;height:auto'><a class='pi' href="<?php echo U('Admin/Order/index',array('mid'=>$v['mid']));?>" style="font-size:15px;color:white" target="_blank"><?php echo ($v["score"]); ?></a></span></h3>
+									<h3><span class="label label-default" style='margin:15px;height:auto'><a class='pi' href="<?php echo U('Admin/Order/index',array('mid'=>$v['mid']));?>" style="font-size:15px;color:white" target="_blank"><?php echo cal(get_info('order_all_money'));?></a></span></h3>
 								</div>
 
 								<div class="panel-footer">
