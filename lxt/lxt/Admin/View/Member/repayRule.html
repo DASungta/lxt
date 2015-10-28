@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>返还规则</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="__PUBLIC__/Admin/css/style.css" rel='stylesheet' type='text/css' />
+<link href="__PUBLIC__/Admin/css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<script src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+     <include file='Public/head' />
+        <div id="page-wrapper">
+        <div class="col-md-12 graphs">
+	   <div class="xs">
+  	 <h3><span class="label label-success">返回规则列表</span>&nbsp;<a href="{:U('Admin/Member/addRepayRule')}"><button type="button" class="btn btn-xs btn-success warning_4">&nbsp;+&nbsp; </button></a></h3>
+     <div class="panel-body no-padding" style="display: block;">
+          <table class="table table-striped">
+            <thead>
+              <tr class="warning">
+                <th>规则id</th>
+                <th>合计天数</th>
+                <th>返还次数</th>
+                <th>规则说明</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <foreach name='repayrule' item='v'>
+                <tr>
+                  <td>{$key+1}</td>
+                  <td>{$v.day}</td>
+                  <td>{$v.times}</td>
+                  <td>{$v.state}</td>
+                  <td><button type="button" class="btn btn-xs btn-info"><a href="{:U('Admin/Member/updateRepayRule',array('id'=>$v['id']))}" style="color:white;font-size:15px;font-family:sans-serif">修改</a></button></td>
+                </tr>
+              </foreach>
+            </tbody>
+          </table>
+        </div>
+      
+   </div>
+   
+
+  <include file='Public/footer' />
+<link href="__PUBLIC__/Admin/css/custom.css" rel="stylesheet">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="__PUBLIC__/Admin/js/metisMenu.min.js"></script>
+<script src="__PUBLIC__/Admin/js/custom.js"></script>
+</body>
+</html>
