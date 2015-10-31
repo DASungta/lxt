@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>修改返还规则</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="__PUBLIC__/Admin/css/style.css" rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="__PUBLIC__/shared/js/laydate.js"></script>
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/shared/js/need/laydate.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/shared/js/skins/molv/laydate.css">
+<link href="__PUBLIC__/Admin/css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<script src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+     <include file='Public/head' />
+        <div id="page-wrapper">
+        <div class="graphs">
+	     <div class="xs">
+  	       <h3><span class="label label-success">修改返还规则</h3>
+  	         <div class="tab-content">
+						<div class="tab-pane active" id="horizontal-form">
+						<foreach name='data' item='v'>
+							<form class="form-horizontal" method="post" action="{:U('Admin/Member/updateRepayRuleHandle',array('id'=>$v['id']))}">
+								<div class="form-group">
+									<label for="disabledinput" class="col-sm-2 control-label">规则编号</label>
+									<div class="row">
+										<div class="col-md-3 grid_box1">
+											<input disabled="" type="text" name="rule_id" class="form-control1" id="disabledinput" value="{$v['id']}">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="disabledinput" class="col-sm-2 control-label">合计天数</label>
+									<div class="row">
+										<div class="col-md-3 grid_box1">
+											<input type="text" class="form-control1" id="disabledinput" name="day" value="{$v['day']}">
+										</div>
+										
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="disabledinput" class="col-sm-2 control-label">返还次数</label>
+									<div class="row">
+										<div class="col-md-3 grid_box1">
+											<input type="text" class="form-control1" id="disabledinput" name="times" value="{$v['times']}">
+										</div>
+										
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="disabledinput" class="col-sm-2 control-label">规则说明</label>
+									<div class="row">
+										<div class="col-md-3 grid_box1">
+											<input type="text" class="form-control1" id="disabledinput" name="state" value="{$v['state']}">
+										</div>
+										
+									</div>
+								</div>
+
+								<div class="panel-footer">
+									<div class="row">
+										<div class="col-sm-8 col-sm-offset-2">
+											<button class="btn-success btn">保存</button>
+											<!-- <button class="btn-default btn">Cancel</button> -->
+											<!-- <button class="btn-inverse btn">Reset</button> -->
+										</div>
+									</div>
+								 </div>
+							</form>
+							</foreach>
+						</div>
+			</div>
+
+      <!-- 提交 -->
+      
+
+  <include file='Public/footer' />
+</body>
+</html>

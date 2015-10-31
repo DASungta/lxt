@@ -1,0 +1,68 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>会员积分详情</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="__PUBLIC__/Admin/css/style.css" rel='stylesheet' type='text/css' />
+<link href="__PUBLIC__/Admin/css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<script src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+     <include file='Public/head' />
+        <div id="page-wrapper">
+        <div class="col-md-12 graphs">
+	   <!-- <div class="xs"> -->
+	   <div class="alert alert-warning" role="alert">
+        <strong>提醒！</strong> 积分详情是由会员订单计算得出，如有错误请立即反馈！
+       </div>
+  	 <h3><span class="label label-success">积分详情</span></h3><br/>
+     <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>会员编号</th>
+            <th>会员名称</th>
+            <th>现有积分</th>
+            <th>冻结积分</th>
+            <th>返还剩余</th>
+            <th>提现积分</th>
+            <th>兑换积分</th>
+          </tr>
+        </thead>
+        <tbody>
+ 		  <tr>
+     		<th>{:$member['mid']}</th>
+ 		  	<th>{:$member['name']}</th>
+ 		  	<th>{:$all_score*10}</th>
+ 		  	<th>{:$left_money}</th>
+ 		  	<th>{:$get_money}</th>
+ 		  	<th>{:$cash}</th>
+ 		  	<th>{:$ex_score}</th>
+ 		  </tr>
+          <tr class="success">
+          <td colspan="10" class="page" align="center">{$page}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div><!-- /.table-responsive -->
+    
+   
+</div>
+
+  <include file='Public/footer' />
+
+</body>
+</html>
+
