@@ -20,6 +20,11 @@ class MemberController extends CommonController{
 					$money=$money+$v['money'];
 				}
 			}*/
+			$member[$key]['score']=0;
+			$order=M('order')->where(array('mid'=>$value['mid']))->select();
+			foreach ($order as $k => $v) {
+	            $member[$key]['score']=$member[$key]['score']+$v['money'];
+	    	}
 			foreach ($memberstatus as $k1 => $v1) {
 				if($v1['id']==$value['memberstatus']) {
 					$money=$money*$v1['getrule'];
@@ -133,6 +138,7 @@ class MemberController extends CommonController{
 		$data=M('member')->where(array('mid'=>$mid))->select();
 		$statusData=M('memberstatus')->field(array('id','title'))->select();
 		$this->statusData=$statusData;
+		$this->mid=$mid;
 		$this->data=$data;
 		$this->display();
 	}
@@ -202,10 +208,10 @@ class MemberController extends CommonController{
 
 	public function scoreDetail() {
 		$mid=I('get.mid');
-		$data=get_member_info($mid);
-		//p($data);die;
+		/*$data=get_member_info($mid);
+		p($data);die;*/
 		//p($mid);die;
-		/*$order=M('order')->where(array('mid'=>$mid))->select();
+		$order=M('order')->where(array('mid'=>$mid))->select();
     	$member=M('member')->where(array('mid'=>$mid))->find();
     	$memberstatus=M('memberstatus')->where(array('id'=>$member['memberstatus']))->find();
     	$repayrule=M('repayrule')->where(array('id'=>$memberstatus['repayrule']))->find();
@@ -242,7 +248,7 @@ class MemberController extends CommonController{
     	$this->left_money=$left_money;
     	$this->get_money=$get_money-$cash-$ex_score;
         $this->ex_score=$ex_score;
-        $this->cash=$cash;*/
+        $this->cash=$cash;
         $this->data=$data;
         $this->display();
 	}

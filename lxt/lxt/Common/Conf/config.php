@@ -1,12 +1,12 @@
 <?php
 return array(
-	 //本地测试连接数据库参数
+	 /*//本地测试连接数据库参数
 	'DB_TYPE' => 'MySQL',
 	'DB_HOST' => '127.0.0.1',
 	'DB_NAME' => 'senso',
 	'DB_USER' => 'root',
 	'DB_PWD' => '',
-	'DB_PREFIX' => 'sb_',
+	'DB_PREFIX' => 'sb_',*/
 
     //服务器连接参数
     // 'DB_TYPE' => 'MySQL',
@@ -15,14 +15,14 @@ return array(
     // 'DB_USER' => 'hdm182127532_db',
     // 'DB_PWD' => 'hdm182127532',
     // 'DB_PREFIX' => 'sb_',
-/*
+
     //服务器连接参数
     'DB_TYPE' => 'MySQL',
     'DB_HOST' => 'hdm182127532.my3w.com',
     'DB_NAME' => 'hdm182127532_db',
     'DB_USER' => 'hdm182127532',
     'DB_PWD' => 'suntton2014',
-    'DB_PREFIX' => 'sb_',*/
+    'DB_PREFIX' => 'sb_',
 
 	// 配置邮件发送服务器
     'MAIL_HOST' =>'smtp.sensobaby.net',//smtp服务器的名称
@@ -40,7 +40,7 @@ return array(
 
     'URL_CASE_INSENSITIVE' =>true,
 
-    'SHOW_PAGE_TRACE' =>true,
+    //'SHOW_PAGE_TRACE' =>true,
 
     //'USER_MID' => session('mid'),
 );

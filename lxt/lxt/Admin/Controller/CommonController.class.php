@@ -6,8 +6,8 @@ class CommonController extends Controller {
 		if( !isset($_SESSION['uid']) ) {
 			$this->redirect('Admin/Login/index');
 		}
-		if(C('V.USER_STATUS_TITLE')==null) {
-			get_memberstatus(true);
-		}
+		// if(C('V.USER_STATUS_TITLE')==null) {
+		// 	get_memberstatus(true);
+		// }
 	}
 }

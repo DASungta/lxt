@@ -233,7 +233,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <td><button type="button" class="btn btn-sm btn-default warning_4"><a style="color:grey;font-size:14px" href="<?php echo U('Admin/Member/scoreDetail',array('mid'=>$v['mid']));?>"><?php echo ($v["name"]); ?></a></td></button>
               <td><?php echo ($v["campany"]); ?></td>
               <td><?php echo ($v["memberstatus"]); ?></td>
-              <td><?php echo ($v["score"]); ?></td>
+              <td><?php echo (10*($v["score"])); ?></td>
               <td><?php echo ($v["number"]); ?></td>
               <td><button type="button" class="btn btn-xs btn-info"><a class='pi2' href="<?php echo U('Admin/Order/addOrder',array('mid' => $v['mid']));?>" style="color:white;font-size:15px;font-family:sans-serif" >添加订单</a></button>&nbsp;|&nbsp;<button type="button" class="btn btn-xs btn-warning warning_44"><a class='pi2' href="<?php echo U('Admin/Member/updateMember',array('mid'=>$v['mid']));?>" style="color:white;font-size:15px">修改</a></button></td>
             </tr><?php endforeach; endif; ?>

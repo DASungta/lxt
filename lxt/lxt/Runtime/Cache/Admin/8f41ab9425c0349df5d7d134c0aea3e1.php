@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
-<title>修改会员</title>
+<title>返还规则</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -11,33 +11,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="/lxt/Public/Admin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
 <link href="/lxt/Public/Admin/css/style.css" rel='stylesheet' type='text/css' />
-<script type="text/javascript" src="/lxt/Public/shared/js/laydate.js"></script>
-
-<link rel="stylesheet" type="text/css" href="/lxt/Public/shared/js/need/laydate.css">
-<link rel="stylesheet" type="text/css" href="/lxt/Public/shared/js/skins/molv/laydate.css">
 <link href="/lxt/Public/Admin/css/font-awesome.css" rel="stylesheet"> 
 <!-- jQuery -->
 <script src="/lxt/Public/Admin/js/jquery.min.js"></script>
 
 <script src="/lxt/Public/Admin/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	function check()
-	{ 
-		with(document.all)
-		{
-			if(pwd1.value!=pwd2.value)
-			{
-				alert("两次密码不一致！")
-				pwd1.value = "";
-				pwd2.value = "";
-				window.onbeforeunload = function () {
-		            return false;
-		        }
-			}
-			else document.forms[0].submit();
-		}
-	}
-</script>
 </head>
 <body>
 <div id="wrapper">
@@ -228,125 +206,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- /.navbar-static-side -->
         </nav>
         <div id="page-wrapper">
-        <div class="graphs">
-	     <div class="xs">
-  	       <h3><span class="label label-success">修改会员信息</h3>
-  	         <div class="tab-content">
-						<div class="tab-pane active" id="horizontal-form">
-						   <?php if(is_array($data)): foreach($data as $key=>$v): ?><form class="form-horizontal" method="post" action="<?php echo U('Admin/Member/updateMemberHandle');?>">
-								<div class="form-group">
-									
-									<div class="col-sm-8">
-										<input name="mid" type="hidden" class="form-control1" id="disabledinput" value="<?php echo ($v['mid']); ?>">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-md-2 control-label">新密码</label>
-									<div class="col-md-8">
-										<div class="input-group">
-											<span class="input-group-addon">
-												<i class="fa fa-key"></i>
-											</span>
-											<input type="password" id="pwd1" name="pwd" class="form-control1" id="exampleInputPassword1">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-md-2 control-label">确认密码</label>
-									<div class="col-md-8">
-										<div class="input-group">
-											<span class="input-group-addon">
-												<i class="fa fa-key"></i>
-											</span>
-											<input type="password" id="pwd2" name="pwd2" class="form-control1" id="exampleInputPassword1">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">会员名称</label>
-									<div class="col-sm-8">
-										<input  type="text" name="name" class="form-control1" id="disabledinput" value="<?php echo ($v['name']); ?>">
-									</div>
-								</div>
-								
-							
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">公司/店面名称</label>
-									<div class="col-sm-8">
-										<input  type="text" name="company" class="form-control1" id="disabledinput" value="<?php echo ($v['campany']); ?>">
-									</div>
-								</div>
-								
-
-								<div class="form-group">
-									<label for="selector1" class="col-sm-2 control-label">会员等级</label>
-									<div class="col-sm-8">
-										<select name="memberstatus" id="selector1" class="form-control1" >
-											<option value="0">请选择</option>
-											<?php if(is_array($statusData)): foreach($statusData as $key=>$s): ?><option value="<?php echo ($s['id']); ?>"><?php echo ($s["title"]); ?></option><?php endforeach; endif; ?>
-										</select>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">地址</label>
-									<div class="col-sm-8">
-										<input  type="text" name="address" class="form-control1" id="disabledinput" value="<?php echo ($v['address']); ?>">
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">联系电话</label>
-									<div class="col-sm-8">
-										<input  type="text" name="number" class="form-control1" id="disabledinput" value="<?php echo ($v['number']); ?>">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">入会日期</label>
-									<div class="col-sm-8">
-										<input  type="date" name="datetime" class="form-control1" ng-model='model.date' required="" value="<?php echo ($v['datetime']); ?>">
-									</div>
-								</div>
-								<!-- <div class="form-group">
-					              <label class="control-label normal">Date</label>
-					              <input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
-					            </div> -->
-
-								<div class="form-group">
-									<label class="col-md-2 control-label">邮件地址</label>
-									<div class="col-md-8">
-										<div class="input-group">							
-											<span class="input-group-addon">
-												<i class="fa fa-envelope-o"></i>
-											</span>
-											<input type="text" name="email" class="form-control1" value="<?php echo ($v['email']); ?>">
-										</div>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">积分总额</label>
-									<h3><span class="label label-default" style='margin:15px;height:auto'><a class='pi' href="<?php echo U('Admin/Order/index',array('mid'=>$v['mid']));?>" style="font-size:15px;color:white" target="_blank"><?php echo (10*(get_info('order_all_money',$mid))); ?></a></span></h3>
-								</div>
-
-								<div class="panel-footer">
-									<div class="row">
-										<div class="col-sm-8 col-sm-offset-2">
-											<button class="btn-success btn" onclick="check()">保存</button>
-											<!-- <button class="btn-default btn">Cancel</button> -->
-											<!-- <button class="btn-inverse btn">Reset</button> -->
-										</div>
-									</div>
-								 </div>
-								
-							</form><?php endforeach; endif; ?>
-						</div>
-					</div>
-					
-					
-      <!-- 提交 -->
+        <div class="col-md-12 graphs">
+	   <div class="xs">
+  	 <h3><span class="label label-success">返回规则列表</span>&nbsp;<a href="<?php echo U('Admin/Member/addRepayRule');?>"><button type="button" class="btn btn-xs btn-success warning_4">&nbsp;+&nbsp; </button></a></h3>
+     <div class="panel-body no-padding" style="display: block;">
+          <table class="table table-striped">
+            <thead>
+              <tr class="warning">
+                <th>规则id</th>
+                <th>合计天数</th>
+                <th>返还次数</th>
+                <th>规则说明</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php if(is_array($repayrule)): foreach($repayrule as $key=>$v): ?><tr>
+                  <td><?php echo ($key+1); ?></td>
+                  <td><?php echo ($v["day"]); ?></td>
+                  <td><?php echo ($v["times"]); ?></td>
+                  <td><?php echo ($v["state"]); ?></td>
+                  <td><button type="button" class="btn btn-xs btn-info"><a href="<?php echo U('Admin/Member/updateRepayRule',array('id'=>$v['id']));?>" style="color:white;font-size:15px;font-family:sans-serif">修改</a></button></td>
+                </tr><?php endforeach; endif; ?>
+            </tbody>
+          </table>
+        </div>
+      
+   </div>
    
-        <div class="clearfix"> </div>
+
+    <div class="clearfix"> </div>
   
   <div class="copy_layout">
   <div>
@@ -367,6 +256,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		window.history.back(-1);
 	}
 </script>
+<link href="/lxt/Public/Admin/css/custom.css" rel="stylesheet">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="/lxt/Public/Admin/js/metisMenu.min.js"></script>
+<script src="/lxt/Public/Admin/js/custom.js"></script>
 <link href="/lxt/Public/Admin/css/custom.css" rel="stylesheet">
 <!-- Metis Menu Plugin JavaScript -->
 <script src="/lxt/Public/Admin/js/metisMenu.min.js"></script>

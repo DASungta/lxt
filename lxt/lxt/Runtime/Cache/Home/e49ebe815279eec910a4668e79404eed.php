@@ -246,7 +246,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="top-on">
                             <div class="top-on1">
-                                <p><?php echo (mb_substr($v["name"],0,1,'utf-8')); ?>先生</p>
+                                <p style="width:170px"><?php echo ($v["campany"]); ?></p>
                                 <span><?php echo ($v["score"]); ?></span>
                             </div>
                             <label class="round"> </label>

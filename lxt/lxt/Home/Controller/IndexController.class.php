@@ -14,9 +14,15 @@ class IndexController extends CommonController {
         p($da);die;*/
         
         //p(C('V.USER_STATUS_TITLE'));
+        //p($data);die;
+        //p(C('V.USER_STATUS_GETRULE'));
+        // p(dbejsa);
+        // p(C('V.USER_STATUS_REPAYDAY'));
+        // die;
+        //$all_money=0;
         $data=get_member_info($mid);
-        //p($data);
-        //die;
+        // p($data);
+        // die;
         // $all_money=D('order')->get_order_all_money($mid);
         // $cash_score=D('cash')->get_cash_all_score();
         // $ex_score=D('exchange')->get_ex_all_score();

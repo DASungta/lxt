@@ -228,13 +228,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </thead>
         <tbody>
  		  <tr>
- 		  	<th><?php echo session('mid');?></th>
- 		  	<th><?php echo session('membername');?></th>
- 		  	<th><?php echo ($data["all_score"]); ?></th>
- 		  	<th><?php echo ($data["left_score"]); ?></th>
- 		  	<th><?php echo ($data["get_score"]); ?></th>
- 		  	<th><?php echo ($data["cash"]); ?></th>
- 		  	<th><?php echo ($data["ex_score"]); ?></th>
+     		<th><?php echo $member['mid'];?></th>
+ 		  	<th><?php echo $member['name'];?></th>
+ 		  	<th><?php echo $all_score*10;?></th>
+ 		  	<th><?php echo $left_money;?></th>
+ 		  	<th><?php echo $get_money;?></th>
+ 		  	<th><?php echo $cash;?></th>
+ 		  	<th><?php echo $ex_score;?></th>
  		  </tr>
           <tr class="success">
           <td colspan="10" class="page" align="center"><?php echo ($page); ?></td>

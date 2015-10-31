@@ -49,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <td><button type="button" class="btn btn-sm btn-default warning_4"><a style="color:grey;font-size:14px" href="{:U('Admin/Member/scoreDetail',array('mid'=>$v['mid']))}">{$v.name}</a></td></button>
               <td>{$v.campany}</td>
               <td>{$v.memberstatus}</td>
-              <td>{$v.score}</td>
+              <td>{$v.score|10*}</td>
               <td>{$v.number}</td>
               <td><button type="button" class="btn btn-xs btn-info"><a class='pi2' href="{:U('Admin/Order/addOrder',array('mid' => $v['mid']))}" style="color:white;font-size:15px;font-family:sans-serif" >添加订单</a></button>&nbsp;|&nbsp;<button type="button" class="btn btn-xs btn-warning warning_44"><a class='pi2' href="{:U('Admin/Member/updateMember',array('mid'=>$v['mid']))}" style="color:white;font-size:15px">修改</a></button></td>
             </tr>

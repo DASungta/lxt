@@ -9,15 +9,11 @@ class OrderModel extends Model {
 			);
 		$field=array('mid','createtime','money');
 		$data=$this->where($where)->field($field)->select();
-		//p($data);die;
-		// p(C('USER_STATUS_GETRULE'));
-		// p(dbejsa);
-		// p(C('USER_STATUS_REPAYDAY'));
-		// die;
-		$all_money=0;
+		
 		switch ($get) {
 			case '1':
 				$date=date('Y-m-d');
+				$all_money=0;
 				foreach ($data as $key => $value) {
 					$day=getDay($date,$value['createtime']);
 		    		if($day <= C('V.USER_STATUS_REPAYDAY')) {
@@ -28,8 +24,8 @@ class OrderModel extends Model {
 		    		}
 
 				}
-				// p($get_money);
-				// die;
+				//p($get_money);
+				//die;
 				return $get_money;
 				break;
 
@@ -47,6 +43,8 @@ class OrderModel extends Model {
 				break;
 			
 			case '3':
+				//p(fgeshfg);die;
+				$all_money=0;
 				foreach ($data as $key => $value) {
 					$all_money=$all_money+$value['money'];
 				};

@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
-<title>修改会员</title>
+<title>添加返还规则</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -20,24 +20,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="/lxt/Public/Admin/js/jquery.min.js"></script>
 
 <script src="/lxt/Public/Admin/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	function check()
-	{ 
-		with(document.all)
-		{
-			if(pwd1.value!=pwd2.value)
-			{
-				alert("两次密码不一致！")
-				pwd1.value = "";
-				pwd2.value = "";
-				window.onbeforeunload = function () {
-		            return false;
-		        }
-			}
-			else document.forms[0].submit();
-		}
-	}
-</script>
 </head>
 <body>
 <div id="wrapper">
@@ -229,124 +211,70 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </nav>
         <div id="page-wrapper">
         <div class="graphs">
+        <div class="alert alert-danger" role="alert">
+        <strong>教程！</strong> 添加完成后请前往会员系统>添加会员等级！
+       </div>
+       <div class="alert alert-warning" role="alert">
+        <strong>添加规则！</strong> 合计天数为要返还的天数，规则说明请按这样的格式填写：共100天分100次返还！
+       </div>
 	     <div class="xs">
-  	       <h3><span class="label label-success">修改会员信息</h3>
+  	       <h3><span class="label label-success">添加返还规则</h3>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
-						   <?php if(is_array($data)): foreach($data as $key=>$v): ?><form class="form-horizontal" method="post" action="<?php echo U('Admin/Member/updateMemberHandle');?>">
+							<form class="form-horizontal" method="post" action="<?php echo U('Admin/Member/addRepayRuleHandle');?>">
 								<div class="form-group">
-									
-									<div class="col-sm-8">
-										<input name="mid" type="hidden" class="form-control1" id="disabledinput" value="<?php echo ($v['mid']); ?>">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-md-2 control-label">新密码</label>
-									<div class="col-md-8">
-										<div class="input-group">
-											<span class="input-group-addon">
-												<i class="fa fa-key"></i>
-											</span>
-											<input type="password" id="pwd1" name="pwd" class="form-control1" id="exampleInputPassword1">
+									<label for="disabledinput" class="col-sm-2 control-label">规则编号</label>
+									<div class="row">
+										<div class="col-md-3 grid_box1">
+											<input disabled="" type="text" name="rule_id" class="form-control1" id="disabledinput" value="<?php echo ($rule_id); ?>">
 										</div>
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-md-2 control-label">确认密码</label>
-									<div class="col-md-8">
-										<div class="input-group">
-											<span class="input-group-addon">
-												<i class="fa fa-key"></i>
-											</span>
-											<input type="password" id="pwd2" name="pwd2" class="form-control1" id="exampleInputPassword1">
+									<label for="disabledinput" class="col-sm-2 control-label">合计天数</label>
+									<div class="row">
+										<div class="col-md-3 grid_box1">
+											<input type="text" class="form-control1" id="disabledinput" name="day" value="">
 										</div>
+										
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">会员名称</label>
-									<div class="col-sm-8">
-										<input  type="text" name="name" class="form-control1" id="disabledinput" value="<?php echo ($v['name']); ?>">
-									</div>
-								</div>
-								
-							
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">公司/店面名称</label>
-									<div class="col-sm-8">
-										<input  type="text" name="company" class="form-control1" id="disabledinput" value="<?php echo ($v['campany']); ?>">
-									</div>
-								</div>
-								
-
-								<div class="form-group">
-									<label for="selector1" class="col-sm-2 control-label">会员等级</label>
-									<div class="col-sm-8">
-										<select name="memberstatus" id="selector1" class="form-control1" >
-											<option value="0">请选择</option>
-											<?php if(is_array($statusData)): foreach($statusData as $key=>$s): ?><option value="<?php echo ($s['id']); ?>"><?php echo ($s["title"]); ?></option><?php endforeach; endif; ?>
-										</select>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">地址</label>
-									<div class="col-sm-8">
-										<input  type="text" name="address" class="form-control1" id="disabledinput" value="<?php echo ($v['address']); ?>">
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">联系电话</label>
-									<div class="col-sm-8">
-										<input  type="text" name="number" class="form-control1" id="disabledinput" value="<?php echo ($v['number']); ?>">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">入会日期</label>
-									<div class="col-sm-8">
-										<input  type="date" name="datetime" class="form-control1" ng-model='model.date' required="" value="<?php echo ($v['datetime']); ?>">
-									</div>
-								</div>
-								<!-- <div class="form-group">
-					              <label class="control-label normal">Date</label>
-					              <input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
-					            </div> -->
-
-								<div class="form-group">
-									<label class="col-md-2 control-label">邮件地址</label>
-									<div class="col-md-8">
-										<div class="input-group">							
-											<span class="input-group-addon">
-												<i class="fa fa-envelope-o"></i>
-											</span>
-											<input type="text" name="email" class="form-control1" value="<?php echo ($v['email']); ?>">
+									<label for="disabledinput" class="col-sm-2 control-label">返还次数</label>
+									<div class="row">
+										<div class="col-md-3 grid_box1">
+											<input type="text" class="form-control1" id="disabledinput" name="times" value="">
 										</div>
+										
 									</div>
 								</div>
-
 								<div class="form-group">
-									<label for="disabledinput" class="col-sm-2 control-label">积分总额</label>
-									<h3><span class="label label-default" style='margin:15px;height:auto'><a class='pi' href="<?php echo U('Admin/Order/index',array('mid'=>$v['mid']));?>" style="font-size:15px;color:white" target="_blank"><?php echo (10*(get_info('order_all_money',$mid))); ?></a></span></h3>
+									<label for="disabledinput" class="col-sm-2 control-label">规则说明</label>
+									<div class="row">
+										<div class="col-md-3 grid_box1">
+											<input type="text" class="form-control1" id="disabledinput" name="state" value="">
+										</div>
+										
+									</div>
 								</div>
 
 								<div class="panel-footer">
 									<div class="row">
 										<div class="col-sm-8 col-sm-offset-2">
-											<button class="btn-success btn" onclick="check()">保存</button>
+											<button class="btn-success btn">保存</button>
 											<!-- <button class="btn-default btn">Cancel</button> -->
 											<!-- <button class="btn-inverse btn">Reset</button> -->
 										</div>
 									</div>
 								 </div>
-								
-							</form><?php endforeach; endif; ?>
+							</form>
 						</div>
-					</div>
-					
-					
+			</div>
+
       <!-- 提交 -->
-   
-        <div class="clearfix"> </div>
+      
+
+    <div class="clearfix"> </div>
   
   <div class="copy_layout">
   <div>

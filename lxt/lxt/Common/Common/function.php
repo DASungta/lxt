@@ -63,6 +63,7 @@ function getDay($Date_1,$Date_2) {
         $mid=session('mid');
         $member=M('member')->where(array('mid'=>$mid))->find();
         $memberstatus=M('memberstatus')->where(array('id'=>$member['memberstatus']))->find();
+        //p($memberstatus);die;
         switch ($c) {
             default:
             case 'true':
@@ -78,7 +79,7 @@ function getDay($Date_1,$Date_2) {
                 C($user_config);
                 break;
 
-            case 'default':
+            
             case 'false':
                 switch ($get) {
                     case '1':
