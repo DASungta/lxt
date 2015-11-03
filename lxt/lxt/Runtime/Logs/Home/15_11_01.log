@@ -1,0 +1,826 @@
+[ 2015-11-01T10:13:00+08:00 ] 127.0.0.1 /lxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007628s ]
+
+[ 2015-11-01T10:13:00+08:00 ] 127.0.0.1 /lxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005685s ]
+
+[ 2015-11-01T10:13:03+08:00 ] 127.0.0.1 /lxt/index.php/Home/Login/handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0174s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 0 LIMIT 1   [ RunTime:0.0157s ]
+SQL: SELECT * FROM `sb_member` WHERE `name` = '鲍蕾' LIMIT 1   [ RunTime:0.0159s ]
+
+[ 2015-11-01T10:13:04+08:00 ] 127.0.0.1 /lxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1445483267 LIMIT 1   [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1445483267 LIMIT 1   [ RunTime:0.0151s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0162s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0162s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1445483267  [ RunTime:0.0150s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 20 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1445483267  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0167s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1445483267 AND `status` = 1  [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0130s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1445483267 AND `status` = 1  [ RunTime:0.0169s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1445483267  [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\e49ebe815279eec910a4668e79404eed.php 第 299 行.
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\e49ebe815279eec910a4668e79404eed.php 第 332 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2015-11-01T10:19:16+08:00 ] 127.0.0.1 /lxt/index.php/Home/Login/out.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+
+[ 2015-11-01T10:19:16+08:00 ] 127.0.0.1 /lxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+
+[ 2015-11-01T10:19:16+08:00 ] 127.0.0.1 /lxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2015-11-01T10:19:18+08:00 ] 127.0.0.1 /lxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2015-11-01T10:19:20+08:00 ] 127.0.0.1 /lxt/index.php/Home/Login/handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sb_member` WHERE `name` = '宝婴坊-雨花西路' LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2015-11-01T10:19:21+08:00 ] 127.0.0.1 /lxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0067s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0092s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0093s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\e49ebe815279eec910a4668e79404eed.php 第 299 行.
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\e49ebe815279eec910a4668e79404eed.php 第 332 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2015-11-01T11:08:53+08:00 ] 127.0.0.1 /lxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0068s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0070s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0067s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\e49ebe815279eec910a4668e79404eed.php 第 299 行.
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\e49ebe815279eec910a4668e79404eed.php 第 332 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002223s ]
+
+[ 2015-11-01T11:08:55+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0083s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0068s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0088s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+ERR: 模板不存在:./lxt/Home/View/Order/addOrder.html
+
+[ 2015-11-01T11:10:23+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0068s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0066s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0065s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+ERR: 模板不存在:./lxt/Home/View/Order/addOrder.html
+
+[ 2015-11-01T11:10:53+08:00 ] 127.0.0.1 /lxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0067s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0079s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0070s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\e49ebe815279eec910a4668e79404eed.php 第 299 行.
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\e49ebe815279eec910a4668e79404eed.php 第 332 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2015-11-01T11:10:55+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0078s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0104s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0075s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2015-11-01T11:11:08+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0067s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0106s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0084s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2015-11-01T11:11:10+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0082s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0087s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0070s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+
+[ 2015-11-01T11:11:37+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0060s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0050s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0051s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2015-11-01T11:11:37+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0044s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0047s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0077s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2015-11-01T11:11:39+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0064s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0065s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0068s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2015-11-01T11:11:40+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0085s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0076s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0071s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2015-11-01T11:11:41+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0069s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0073s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0066s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2015-11-01T11:11:42+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0074s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0078s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0078s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2015-11-01T11:11:43+08:00 ] 127.0.0.1 /lxt/index.php/Home/Order/orderDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `sb_member` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_memberstatus` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sb_repayrule` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `sb_member` WHERE `mid` = 1442927376 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sb_memberstatus` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sb_repayrule` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0075s ]
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: get_money C:\xampp\htdocs\lxt\lxt\Home\Model\OrderModel.class.php 第 23 行.
+SQL: SELECT `mid`,`createtime`,`money` FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_cash` [ RunTime:0.0092s ]
+SQL: SELECT `score` FROM `sb_cash` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_exchange` [ RunTime:0.0068s ]
+SQL: SELECT `amount` FROM `sb_exchange` WHERE `mid` = 1442927376 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sb_member` ORDER BY score desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_order` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `sb_order` WHERE `mid` = 1442927376  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 227 行.
+NOTIC: [8] Undefined index: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined variable: day C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 228 行.
+NOTIC: [8] Undefined index: score C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 229 行.
+NOTIC: [8] Undefined index: get_money C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 230 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\lxt\lxt\Runtime\Cache\Home\19e02b3385919a4374cb19d7431705d4.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+

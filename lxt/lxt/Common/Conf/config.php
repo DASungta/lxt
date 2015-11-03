@@ -1,7 +1,7 @@
 <?php
 return array(
-	 /*//本地测试连接数据库参数
-	'DB_TYPE' => 'MySQL',
+	 //本地测试连接数据库参数
+	/*'DB_TYPE' => 'MySQL',
 	'DB_HOST' => '127.0.0.1',
 	'DB_NAME' => 'senso',
 	'DB_USER' => 'root',

@@ -28,7 +28,9 @@ class OrderController extends CommonController{
 		$this->order=$order;
 		$this->display();
 	}
+
 	public function addOrder(){
 		$this->redirect('Home/Public/error');
 	}
+
 }

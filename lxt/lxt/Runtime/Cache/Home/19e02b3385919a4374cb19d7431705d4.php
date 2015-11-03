@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
-<title>LXT会员平台</title>
+<title>订单详情</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -196,170 +196,70 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- /.navbar-static-side -->
         </nav>
         <div id="page-wrapper">
-        <div class="graphs">
-         <div class="alert alert-info" role="alert">
-        <strong>您好！</strong> 这是 LXT 会员积分平台。本平台正在建设中，功能会逐步完善，还请您耐心等待，并提出宝贵建议！
+        <div class="col-md-12 graphs">
+	   <div class="xs">
+     <div class="alert alert-warning" role="alert">
+        <strong>您好！</strong>这里是您所下的所有订单，您可以查看您的返现区间以及各种信息。
        </div>
-           
-           
-           
-           <div class="widget_4">
-             <div class="col-md-4 widget_1_box1">
-                <div class="coffee">
-                <div class="coffee-top">
-                    <a href="#"><img class="img-responsive" src="/lxt/Public/Admin/images/pic4.jpg" alt="">
-                    <div class="doe">
-                        <h6><?php echo session('mid');?></h6>
-                        <p><?php echo session('membername');?></p>
-                        <p style="color:white"><?php echo C('V.USER_STATUS_TITLE');?></p>
-                        <p style="color:yellow">冻结:<?php echo ($data["left_score"]); ?></p>
-                    </div>
-                    <i></i></a>
-                </div>
-                <div class="follow">
-                  <a href="<?php echo U('Home/Order/orderDetail');?>">                   
-                    <div class="col-xs-4 two">
-                        <p>已返剩余</p>
-                        <span><?php echo ($data["get_score"]); ?></span>
-                    </div></a>
-                    <a href="<?php echo U('Home/Cash/index');?>"> 
-                      <div class="col-xs-4 two">
-                        <p>提现</p>
-                        <span><?php echo ($data["cash"]); ?></span>
-                      </div>
-                    </a>
-                     <div class="col-xs-4 two">
-                        <p>兑换</p>
-                        <span><?php echo ($data["ex_score"]); ?></span>
-                    </div>
-
-                    <div class="clearfix"> </div>
-                  </a>
-                </div>
-               </div>
-             </div>
-             <div class="col-md-4 stats-info3"> 
-                <div class="online">
-                    <?php if(is_array($member2)): foreach($member2 as $key=>$v): ?><div class="online-top">
-                        <?php echo ($key+1); ?><div class="top-at">
-                            <img class="img-responsive" src="/lxt/Public/Admin/images/status_<?php echo ($v['memberstatus']); ?>.png" alt="">
-                        </div>
-                        <div class="top-on">
-                            <div class="top-on1">
-                                <p style="width:170px"><?php echo ($v["campany"]); ?></p>
-                                <span><?php echo (cal(get_info('order_all_money',$v["mid"]))); ?></span>
-                            </div>
-                            <label class="round"> </label>
-                            <div class="clearfix"> </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div><?php endforeach; endif; ?>
-                </div>
-             </div>
-             <div class="col-md-4 stats-info stats-info1">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><span class="label label-default" style='font-size:20px'>最近订单</span></h4>
-                </div>
-                <div class="panel-body panel-body2">
-                    <ul class="list-unstyled">
-                        <li><span style='color:black;font-size:15px'>订单内容</span><div class="text-success pull-right">金额</div></li>
-                        <?php if(is_array($order)): foreach($order as $key=>$v): ?><li>·&nbsp;<?php echo ($v["detail"]); ?><div class="text-success pull-right"><?php echo ($v["money"]); ?>元</div></li><?php endforeach; endif; ?>
-                    </ul>
-                </div>
-            </div>
-             <div class="clearfix"> </div>
-           </div>
-            <div class="col-md-6 widget_1_box2">
-            
-               <button type="button" class="btn btn-info btn-lg"  data-toggle="modal" data-target="#myModal" style="margin-top:25px">
-                申请提现
-               </button>
-               <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal2" style="margin-left:15px;margin-top:25px">
-                申请兑换
-               </button>
-               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                    <form class="form-horizontal" method="post" action="<?php echo U('Home/Index/cashHandle');?>">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                          <h2 class="modal-title">提现</h2>
-                        </div>
-                        <div class="modal-body">
-                         <div class="alert alert-warning" role="alert">
-                          <strong>提醒！</strong>您是<?php echo C('V.USER_STATUS_TITLE');?>，提现额度为<?php echo C('V.USER_STATUS_CASHRULE')*10*10;?>%，10积分=1元，可提现积分为<?php echo ($data["get_score"]); ?>
-                         </div>
-                          
-                            <div class="form-group">
-                              <label for="disabledinput" class="col-sm-2 control-label">提现积分</label>
-                              <div class="row">
-                                <div class="col-md-3 grid_box1">
-                                  <input type="text" name="amount" class="form-control1" id="disabledinput">
-                                  <input type="hidden" name="cashrule" value="{C('V.USER_STATUS_CASHRULE')}">
-                                  <input type="hidden" name="get" value="<?php echo ($data["get_score"]); ?>">
-                                </div>
-                              </div>
-                            </div>
-                          
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                          <button type="submit" class="btn-success btn">提交</button>
-                        </div>
-                        </form>
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-
-                  </div>
-                  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                    <form class="form-horizontal" method="post" action="<?php echo U('Home/Index/exchangeHandle');?>">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                          <h2 class="modal-title">兑换</h2>
-                        </div>
-                        <div class="modal-body">
-                         <div class="alert alert-warning" role="alert">
-                          <strong>提醒！</strong>兑换率为100%，确认之后管理员会收到您的请求并主动与您联系
-                         </div>
-                          
-                            <div class="form-group">
-                              <label for="disabledinput" class="col-sm-2 control-label">兑换积分</label>
-                              <div class="row">
-                                <div class="col-md-3 grid_box1">
-                                  <input type="text" name="amount" class="form-control1" id="disabledinput">
-                                  <input type="hidden" name="get" value="<?php echo ($data["get_score"]); ?>">
-                                  <!-- <input type="hidden" name="cashrule" value="<?php echo ($cashrule); ?>"> -->
-                                </div>
-                              </div>
-                            </div>
-                          
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                          <button type="submit" class="btn-success btn">提交</button>
-                        </div>
-                        </form>
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                    </div>
-             </div>
-             
-             
-             
-             <div class="clearfix"> </div>
-      </div>
-    <div class="copy">
-            <p>Copyright &copy; 2015. <a href='http://green.njtech.edu.cn/' target="_blank">GreenStudio</a> All rights reserved.</p>
+  	 <h3><span class="label label-success">订单详情</span></h3></div>
+     
+      <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+        <div class="panel-body no-padding">
+          <table class="table table-striped">
+            <thead>
+              <tr class="warning">
+                <th>#</th>
+                <th>订单编号</th>
+                <th>内容</th>
+                <th>日期</th>
+                <th>天数</th>
+                <th>剩余天数</th>
+                <th>积分</th>
+                <th>已返还</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php if(is_array($order)): foreach($order as $key=>$v): ?><tr>
+                <td><?php echo ($key+1); ?></td>
+                <td><?php echo ($v["oid"]); ?></td>
+                <td><?php echo ($v["detail"]); ?></td>
+                <td><?php echo ($v["createtime"]); ?></td>
+                <td><?php echo ($v["day"]); ?></td>
+                <td><span class="label label-warning" style='display:block;width:50px;font-size:15px'><?php $d=( $day>$v['day'] ) ? $day-$v['day'] : 0;echo $d;?></td>
+                <td><?php echo ($v["score"]); ?></td>
+                <td><span class="label label-danger" style='display:block;width:80px;font-size:15px'><?php echo ($v["get_money"]); ?></td>
+              </tr><?php endforeach; endif; ?>
+              <tr class="success">
+                <td colspan="10" class="page" align="center"><?php echo ($page); ?></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
   </div>
-    </div>
-       </div>
+       
+   </div>
+   
+    <div class="clearfix"> </div>
+  
+  <div class="copy_layout">
+  <div>
+                    <button type="button" class="btn btn-default" id='back' onclick="back()">Back</button>
+                </div>
+      <p>Copyright &copy; 2015. <a href='http://green.njtech.edu.cn/' target="_blank">GreenStudio</a> All rights reserved.</p>
+  </div>
+  </div>
+      </div>
       <!-- /#page-wrapper -->
    </div>
     <!-- /#wrapper -->
-  
-
+<!-- Nav CSS -->
+<script type="text/javascript">
+	function back()
+	{ 
+		
+		window.history.back(-1);
+	}
+</script>
 <link href="/lxt/Public/Admin/css/custom.css" rel="stylesheet">
 <!-- Metis Menu Plugin JavaScript -->
 <script src="/lxt/Public/Admin/js/metisMenu.min.js"></script>
