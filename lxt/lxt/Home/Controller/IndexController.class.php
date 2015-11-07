@@ -8,6 +8,12 @@ class IndexController extends CommonController {
     public function index(){
         //get_memberstatus('true');
    	    $mid=session('mid');
+        $d=S('member');
+        // p($d);
+        $data=$this->get_member_info($mid);
+        //p(CONTROLLER_NAME);
+        // p($data);
+        //die;
          //$d=get_order_all_money();p($d);die;
         //p(get_info('order_all_money'));
         /*$da=D('Home/order')->get_order_all_money($mid,1);
@@ -20,7 +26,8 @@ class IndexController extends CommonController {
         // p(C('V.USER_STATUS_REPAYDAY'));
         // die;
         //$all_money=0;
-        $data=get_member_info($mid);
+        //$data=get_member_info($mid);
+
         // p($data);
         // die;
         // $all_money=D('order')->get_order_all_money($mid);
@@ -75,79 +82,20 @@ class IndexController extends CommonController {
         
         p($get_money);die;
 */
-        
+        //$this->message(MODULE_NAME.'_'.CONTROLLER_NAME.'_'.ACTION_NAME);
     	
         $member2=M('member')->order('score desc')->limit(4)->select();
         $order=M('order')->where(array('mid'=>$mid))->select();
         $this->member2=$member2;
 
         $this->data=$data;
-        $this->memberstatus=C('USER_STATUS_TITLE');
-        $this->cashrule=C('USER_STATUS_CASHRULE');
+        $this->d=$d;
         $this->order=$order;
     	$this->display();
     }
 
-    public function cashHandle() {
-        $amount=I('amount');
-        $cashrule=I('cashrule');
-        $get=I('get');
-        if(checkStatus()){
-            $this->error('有未处理申请！');
-        }
-        if( $amount > $get ) {
-            $this->error('剩余已返积分不足！');
-        } else {
-            $to='lxt-admin@sensobaby.net';
-            $title='来自会员'.session('membername').'的提现申请';
-            $content='会员 '.session('membername').'申请 '.$amount.'*'.($cashrule*10).'% 即 '.($amount*$cashrule/10).' 元人民币的返现';
-            //p($content);die;
-            
+    
 
-            if(SendMail($to,$title,$content)) {                
-                    $data=array(
-                        'mid'=> session('mid'),
-                        'score' => $amount,
-                        'amount' => $amount*$cashrule/10,
-                        'date' => date('Y-m-d H:i:s'),
-                        );
-                    M('cash')->add($data);
-                    $this->success('发送成功！');
-                } else {
-                    $this->error('发送失败');
-                }
-        }
-    }
-
-    public function exchangeHandle() {
-        $amount=I('amount');
-        $get=I('get');
-        
-        if(checkStatus()){
-            $this->error('有未处理申请！');
-        }
-        if( $amount > $get ) {
-            $this->error('剩余已返积分不足！');
-        } else {
-            $to='lxt-admin@sensobaby.net';
-            $title='来自会员'.session('membername').'的兑换申请';
-            $data=M('member')->where(array('mid'=>session('mid')))->find();
-            $content='会员 '.session('membername').'请求 '.$amount.'积分的兑换申请，请速与其联系。联系电话：'.$data['number'];
-            //p($content);die;
-
-            if(SendMail($to,$title,$content)) {
-                $data=array(
-                    'mid'=> session('mid'),
-                    'amount' => $amount,
-                    'date' => date('Y-m-d H:i:s'),
-                    );
-                M('exchange')->add($data);
-                $this->success('发送成功！');
-            } else {
-                $this->error('发送失败！');
-            }
-        }
-        
-    }
+    
 
 }

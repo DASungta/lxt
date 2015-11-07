@@ -36,7 +36,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="doe">
                         <h6>{:session('mid')}</h6>
                         <p>{:session('membername')}</p>
-                        <p style="color:white">{:C('V.USER_STATUS_TITLE')}</p>
+                        <p style="color:white">{$d['data']['USER_STATUS_TITLE']}</p>
                         <p style="color:yellow">冻结:{$data.left_score}</p>
                     </div>
                     <i></i></a>
@@ -107,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 申请兑换
                </button>
                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                    <form class="form-horizontal" method="post" action="{:U('Home/Index/cashHandle')}">
+                    <form class="form-horizontal" method="post" action="{:U('Home/Cash/cashHandle')}">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -116,7 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="modal-body">
                          <div class="alert alert-warning" role="alert">
-                          <strong>提醒！</strong>您是{:C('V.USER_STATUS_TITLE')}，提现额度为{:C('V.USER_STATUS_CASHRULE')*10*10}%，10积分=1元，可提现积分为{$data.get_score}
+                          <strong>提醒！</strong>您是{$d['data']['USER_STATUS_TITLE']}，提现额度为{$d['data']['USER_STATUS_CASHRULE']|100*}%，10积分=1元，可提现积分为{$data.get_score}
                          </div>
                           
                             <div class="form-group">
@@ -124,7 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                               <div class="row">
                                 <div class="col-md-3 grid_box1">
                                   <input type="text" name="amount" class="form-control1" id="disabledinput">
-                                  <input type="hidden" name="cashrule" value="{C('V.USER_STATUS_CASHRULE')}">
+                                  <input type="hidden" name="cashrule" value="{$d['data']['USER_STATUS_CASHRULE']}">
                                   <input type="hidden" name="get" value="{$data.get_score}">
                                 </div>
                               </div>
@@ -141,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                   </div>
                   <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                    <form class="form-horizontal" method="post" action="{:U('Home/Index/exchangeHandle')}">
+                    <form class="form-horizontal" method="post" action="{:U('Home/Exchange/exchangeHandle')}">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">

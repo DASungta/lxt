@@ -151,7 +151,7 @@ function getDay($Date_1,$Date_2) {
     }
 
     function cal($num) {
-        return $num=$num*C('V.USER_STATUS_GETRULE');
+        return $num=$num*10;
     }
 
     function get_member_info($mid) {    

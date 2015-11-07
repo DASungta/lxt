@@ -4,6 +4,9 @@ use Think\Model;
 class OrderModel extends Model {
 	//获取订单总额
 	public function get_order_all_money($mid,$get=null) {
+		$data=S('member');
+		$repayday=$data['data']['USER_STATUS_REPAYDAY'];
+		$getrule=$data['data']['USER_STATUS_GETRULE'];
 		$where=array(
 			'mid'=>$mid,
 			);
@@ -16,8 +19,8 @@ class OrderModel extends Model {
 				$all_money=0;
 				foreach ($data as $key => $value) {
 					$day=getDay($date,$value['createtime']);
-		    		if($day <= C('V.USER_STATUS_REPAYDAY')) {
-		    			$get_money=$get_money+(int)($value['money']*C('V.USER_STATUS_GETRULE')*$day/C('V.USER_STATUS_REPAYDAY'));
+		    		if($day <= $repayday) {
+		    			$get_money=$get_money+(int)($value['money']*$getrule*$day/$repayday);
 		    			//p($get_money);
 		    		}else {
 		    			$get_money=$get_money+cal($value['money']);
@@ -33,7 +36,7 @@ class OrderModel extends Model {
 				$date=date('Y-m-d');
 				foreach ($data as $key => $value) {
 					$day=getDay($date,$value['createtime']);
-		    		if($day <= C('V.USER_STATUS_REPAYDAY')) {
+		    		if($day <= $repayday) {
 		    			$all_money=$all_money+$value['money'];
 		    		}else {
 		    			$all_money=$all_money+0;

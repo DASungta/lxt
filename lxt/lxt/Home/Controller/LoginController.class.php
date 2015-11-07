@@ -50,6 +50,7 @@ class LoginController extends Controller{
 	public function out() {
 		session('mid',null);
 		session('membername',null);
+		S('member',null);
 		$this->redirect('Home/Index/index');
 	}
 }
